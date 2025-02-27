@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import { BookOpen, Home } from 'lucide-react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
               <div className="flex justify-between h-16">
                 <div className="flex">
                   <Link href="/" className="flex items-center px-2 text-gray-900">
+                    <Home className="h-6 w-6 mr-2" />
                     <span className="font-semibold">Theory Test</span>
                   </Link>
                   <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -30,6 +32,7 @@ export default function RootLayout({
                       href="/practice-test"
                       className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900"
                     >
+                      <BookOpen className="h-5 w-5 mr-2" />
                       Practice Test
                     </Link>
                   </div>
