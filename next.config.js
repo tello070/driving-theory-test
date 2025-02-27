@@ -2,9 +2,9 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
+    unoptimized: true
   },
-  distDir: '.next',
+  distDir: 'public'
 }
 
 module.exports = nextConfig
